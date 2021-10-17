@@ -22,8 +22,8 @@ app.use(express.json());
 app.use(Cors());
 
 //db config
-const connect_url =
-  "mongodb+srv://admin:<password>@cluster0.xkp65.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const connect_url =""
+ // "mongodb+srv://username:<password>@cluster0.xxxx.mongodb.net/mydbname?retryWrites=true&w=majority";
 
 mongoose.connect(connect_url, {
   useUnifiedTopology: true,
