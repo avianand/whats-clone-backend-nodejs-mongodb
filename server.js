@@ -10,10 +10,10 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 const pusher = new Pusher({
-  appId: "1280156",
-  key: "9aa2829cdbe26b21c341",
-  secret: "a3f35f2669725116dd4f",
-  cluster: "ap2",
+  appId: "",
+  key: "",
+  secret: "",
+  cluster: "",
   useTLS: true,
 });
 
@@ -23,7 +23,7 @@ app.use(Cors());
 
 //db config
 const connect_url =
-  "mongodb+srv://admin:W5u9A6u9OCrxXAVK@cluster0.xkp65.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://admin:<password>@cluster0.xkp65.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(connect_url, {
   useUnifiedTopology: true,
